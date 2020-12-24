@@ -1,5 +1,3 @@
-﻿using System;
-using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
 namespace Mathematics
@@ -20,16 +18,6 @@ namespace Mathematics
             string[] subs = numStr.Split('.');
             try { return float.Parse(numStr.Remove(subs[0].Length + 1 + numOfDecimalPlaces)); }
             catch { return -1f;  }
-        }
-
-        public static int RoundWhole(int num, int numOfDigits)
-        {
-            return -1;
-        }
-
-        public static int RoundWhole(float num, int numOfDigits)
-        {
-            return -1;
         }
 
         public static int Power(int bas, int exp)
